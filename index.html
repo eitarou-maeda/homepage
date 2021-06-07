@@ -21,10 +21,10 @@ function fortune1() {
     fortune2a('そうなんですね〜　それでは次へ行きましょう');
   }
   else if (result == '2' || result == '２') {
-    fortune2b();
+    fortune2b('そうですか〜では次へいきましょう');
   }
   else if (result == '3' || result == '３') {
-    fortune2c();
+    fortune2c('そうですか〜それでは次へいきましょう');
   }
   else {
     alert('読み取れませんでした。');
@@ -33,13 +33,17 @@ function fortune1() {
 function fortune2a(hoge) {
   alert(hoge);
   var result = prompt(
-    '占い２　'
+    '占い２　あなたはどんな色が好きですか？\n' +
+    '1: 赤\n' +
+    '2: 青\n' +
+    '3: 黄\n' +
+    '（1,2,3 のどれかを入力して下さい）'
   );
   if (result == '1' || result == '１') {
     alert(result);
   }
   else if (result == '2' || result == '２') {
-    alert(result);S
+    alert(result);
   }
   else if (result == '3' || result == '３') {
     alert(result);
