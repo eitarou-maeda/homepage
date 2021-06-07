@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<title>えいすけの家</title>
+
+<style>
+body, input {font-size: 30px;}
+table, td { border: 2px #808080 solid; }
+</style>
+
+<script>
+function fortune1() {
+  var result = prompt(
+    '占い１　あなたには子供がいるとします。あなたはその子にどんな仕事をしてほしいですか？\n' +
+    '1: 全く新しいアイデアを生み出す仕事\n' +
+    '2: アイデアを実現させる仕事\n' +
+    '3: 実現させたものを百点満点にするために精度を上げたりする仕事\n' +
+    '（1,2,3 のどれかを入力して下さい）'
+  );
+  if (result == '1' || result == '１') {
+    fortune2a('そうなんですね〜　それでは次へ行きましょう');
+  }
+  else if (result == '2' || result == '２') {
+    fortune2b();
+  }
+  else if (result == '3' || result == '３') {
+    fortune2c();
+  }
+  else {
+    alert('読み取れませんでした。');
+  }
+}
+function fortune2a(hoge) {
+  alert(hoge);
+  var result = prompt(
+    '占い２　'
+  );
+  if (result == '1' || result == '１') {
+    alert(result);
+  }
+  else if (result == '2' || result == '２') {
+    alert(result);S
+  }
+  else if (result == '3' || result == '３') {
+    alert(result);
+  }
+  else {
+    alert('読み取れませんでした。');
+  }
+}
+function fortune2b() {
+  var result = prompt(
+    '占い２　'
+  );
+  if (result == '1' || result == '１') {
+    alert(result);
+  }
+  else if (result == '2' || result == '２') {
+    alert(result);
+  }
+  else if (result == '3' || result == '３') {
+    alert(result);
+  }
+  else {
+    alert('読み取れませんでした。');
+  }
+}
+function fortune2c() {
+  var result = prompt(
+    '占い２　'
+  );
+  if (result == '1' || result == '１') {
+    alert(result);
+  }
+  else if (result == '2' || result == '２') {
+    alert(result);
+  }
+  else if (result == '3' || result == '３') {
+    alert(result);
+  }
+  else {
+    alert('読み取れませんでした。');
+  }
+}
+
+
+
+
+
+</script>
+
+</head>
+<body>
+こんばんは〜<br/>
+<b><MARQUEE>おふとんひいたかな？</MARQUEE><br/></b>
+ではこれから、いろいろはなしていきます。
+私はいま１０歳です。わたしのすきな教科は、国語です。
+私には弟、妹がいます。そんなかんじです。 
+よかったらあなたの感想をきかせてください。
+<input type="text"></input><br/>
+
+<TABLE> 
+<TR>
+<TD><INPUT type="button" value="押して！！" onclick='alert("マアマアだな")'></TD>
+<TD><INPUT type="button" value="押すなよ" onclick='alert("押すなって言っただろう")'></TD>
+<TD><INPUT type="button" value="押してみたら" onclick='alert("ギリギリ地獄行きだな")'></TD>
+<TD><INPUT type="button" value="押すならどうぞ" onclick='alert("お前さん頭いいな")'></TD>
+<TD><INPUT type="button" value="押してもいいよ" onclick='alert("ゴメンな地獄行きだ")'></TD>
+</TR>
+<TR>
+<TD><INPUT type="button" value="押してよね" onclick='alert("天国に行ってきな")'></TD>
+<TD><INPUT type="button" value="押したら" onclick='alert("お前、頭いいのかわからないがまだ死ぬな")'></TD>
+<TD><INPUT type="button" value="押してよ〜ん" onclick='alert("セーフよ〜ん")'></TD>
+<TD><INPUT type="button" value="押してごら〜ん" onclick='alert("まだまだだな")'></TD>
+<TD><INPUT type="button" value="押さないとだめ" onclick='alert("花丸だが悪い人に騙されるなよ")'></TD>
+</TABLE>
+<a href="page2.html">つぎにいくの？このページはちゃんと見たかな！</a><br/>
+<font size="20px" color="red">ほんとー　まっイイヤ〜</font>
+それから<br>
+
+<INPUT type="button" value="占いですよ" onclick='fortune1()'>
+
+</body>
+</html>
